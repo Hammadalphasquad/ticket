@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./ticket-step5.css" />
+  </head>
+  <body>
+    <!-- Side bar -->
+    <div class="main-page">
+      <div id="main">
+      <div class="sidebar">
+        <div class="sidebar-img">
+          <img src="./logo2.png" alt="" />
+        </div>
+        <div class="sidebar-flex">
+          <div class="sidebar-lists">
+            <p class="sidebar-list">
+              <a href="./analytics.html"> <i class="fa-solid fa-chart-simple"></i> Analytics</a>
+            </p>
+            <p class="sidebar-list"><a href=""><i class="fa-solid fa-ticket"></i> Tickets</a></p>
+            <p class="sidebar-list">
+              <a href=""><i class="fa-solid fa-restroom"></i> Customers</a>
+            </p>
+            <p class="sidebar-list">
+              <a href=""><i class="fa-solid fa-microchip"></i> Hardware</a>
+            </p>
+            <p class="sidebar-list">
+              <a href=""><i class="fa-solid fa-people-group"></i> Team</a>
+            </p>
+            <p class="sidebar-list"><a href=""><i class="fa-solid fa-gears"></i> Settings</a></p>
+            <p class="sidebar-list">
+              <a href=""><i class="fa-solid fa-tag"></i> Tag Manager</a>
+            </p>
+          </div>
+          <div class="sidebar-lower-img">
+  <img src="./sidebar-lower-img.png" alt="" width="150px" height="190px">
+          </div>
+  
+          <div class="sidebar-logout">
+            
+              <p class="clr-white">
+                <a href="./login.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+              </p>
+          </div>
+        </div>
+      </div>
+      <!-- main-right -->
+
+      <div class="main-right container">
+        <div class="header-top">
+          <h3 class="header-top-title">Tickets</h3>
+          <a href="#">
+            <p id="mybtn" onclick="openmodal()">
+              <i class="fa-solid fa-circle-plus" class="create-icon"></i> CREATE
+              TICKET
+            </p></a
+          >
+        </div>
+        <div class="ticket-table">
+          <table>
+            <tr>
+              <th>RMA</th>
+              <th>Status</th>
+              <th>Customer Email</th>
+              <th>Hardware</th>
+              <th>Updated at</th>
+              <th>Actions</th>
+            </tr>
+
+            <tr>
+              <td>0011754379...</td>
+              <td>
+                <div class="pink">Awaiting arrival</div>
+              </td>
+              <td>georgia.young@example.com</td>
+              <td>Starlight-12 Poseidon</td>
+              <td>15 May 2020 8:30 am</td>
+              <td>
+                <i class="fa-regular fa-pen-to-square"></i>
+              </td>
+            </tr>
+
+            <tr>
+              <td>0011754380...</td>
+              <td><div class="orange">In-queue</div></td>
+              <td>bill.sanders@example.com</td>
+              <td>Starlight-12 Poseidon</td>
+              <td>15 May 2020 8:00 am</td>
+              <td>
+                <i class="fa-regular fa-pen-to-square"></i>
+              </td>
+            </tr>
+
+            <tr>
+              <td>0011754381...</td>
+              <td><div class="yellow">In-progress</div></td>
+              <td>michelle.rivera@example.com</td>
+              <td>Starlight-12 Poseidon</td>
+              <td>15 May 2020 9:30 am</td>
+              <td>
+                <i class="fa-regular fa-pen-to-square"></i>
+              </td>
+            </tr>
+
+            <tr>
+              <td>0011754382...</td>
+              <td><div class="green">Completed</div></td>
+              <td>deanna.curtis@example.com</td>
+              <td>Starlight-12 Poseidon</td>
+              <td>15 May 2020 9:30 am</td>
+              <td>
+                <i class="fa-regular fa-pen-to-square"></i>
+              </td>
+            </tr>
+
+            <tr>
+              <td>0011754383...</td>
+              <td><div class="lightgreen">Completed</div></td>
+              <td>jackson.graham@example.com</td>
+              <td>Starlight-12 Poseidon</td>
+              <td>15 May 2020 9:30 am</td>
+              <td>
+                <i class="fa-regular fa-pen-to-square"></i>
+              </td>
+            </tr>
+
+            <tr>
+              <td>0011754384...</td>
+              <td><div class="purpleblue">In-progress</div></td>
+              <td>georgia.young@example.com</td>
+              <td>Starlight-12 Poseidon</td>
+              <td>15 May 2020 9:30 am</td>
+              <td>
+                <i class="fa-regular fa-pen-to-square"></i>
+              </td>
+            </tr>
+
+            <tr>
+              <td>0011754384...</td>
+              <td><div class="purple">Completed</div></td>
+              <td>willie.jennings@example.com</td>
+              <td>Starlight-12 Poseidon</td>
+              <td>15 May 2020 9:00 am</td>
+              <td>
+                <i class="fa-regular fa-pen-to-square"></i>
+              </td>
+            </tr>
+
+            <tr>
+              <td>0011754384...</td>
+              <td><div class="yellowgreen">Completed</div></td>
+              <td>curtis.weaver@example.com</td>
+              <td>Starlight-12 Poseidon</td>
+              <td>15 May 2020 9:00 am</td>
+              <td>
+                <i class="fa-regular fa-pen-to-square"></i>
+              </td>
+            </tr>
+
+            <tr>
+              <td>0011754384...</td>
+              <td><div class="lightpurple">In-queue</div></td>
+              <td>jessica.hanson@example.com</td>
+              <td>Starlight-12 Poseidon</td>
+              <td>15 May 2020 8:30 am</td>
+              <td>
+                <i class="fa-regular fa-pen-to-square"></i>
+              </td>
+            </tr>
+
+            <tr>
+              <td>0011754384...</td>
+              <td><div class="lightblue">Completed</div></td>
+              <td>debbie.baker@example.com</td>
+              <td>Starlight-12 Poseidon</td>
+              <td>15 May 2020 8:00 am</td>
+              <td>
+                <i class="fa-regular fa-pen-to-square"></i>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+      <div id="blur" onclick="openmain()"></div>
+      <div id="mymodal">
+        <div class="details-flex">
+          <p class="detail-form">Details</p>
+
+          <a href="#"
+          ><div id="close" onclick="closemodal()">
+           <i class="fa-solid fa-xmark" class="cross"></i
+            >
+          </div></a>
+        </div>
+        <div class="detail-title">
+          <p class="detail-no">RMA: 0011754379</p>
+          <select name="status" id="status" class="status-edit">
+            <option value="status">status</option>
+          </select>
+        </div>
+        <p class="detail-subt">Diagnosis Info</p>
+        <div class="diagnosis-main">
+          <label class="hardware-title" for="hardware">Hardware name</label
+          ><br />
+          <input
+            type="text"
+            name="hardware"
+            id="hardware"
+            placeholder="Starligh-12 hades"
+            class="hardware-input"
+          /><br />
+          <label class="hardware-title" for="issue">Hardware issue</label><br />
+          <input
+            type="text"
+            name="issue"
+            id="issue"
+            placeholder="Mouse scroll wheel is slow and annoying to deal with is it possible for your mouse to get slow? If it is how do you clean the inside of your mouse I can't find the screws to get inside of it."
+            class="hardware-input1"
+          />
+        </div>
+
+        <select name="diagnosis" id="diagnosis" class="diagnosis">
+          <option value="diagnosis1">Diagnosis 1</option>
+        </select>
+        <select name="diagnosis2" id="diagnosi2" class="diagnosis">
+          <option value="diagnosis2">Diagnosis 2</option>
+        </select>
+
+        <select name="diagnosis3" id="diagnosi2" class="diagnosis">
+          <option value="diagnosis2">Diagnosis 3</option>
+        </select>
+
+        <div class="add-diagnosis-main">
+          <a href="#"
+            ><div class="add-diagnosis">
+              <i class="fa-solid fa-circle-plus"></i>
+              <p class="diagnosis-text">Add Diagnosis</p>
+            </div></a
+          >
+        </div>
+
+        <div class="diagnosis-status">
+          <p class="diag-stat"><strong>haris@alphasquad.tech</strong> changed the status from <strong>Unit Arrival</strong> to <strong>In-queue</strong></p>
+          <p class="diag-stat clr-gray">29 Oct, 2022 at 8:32 PM</p>
+          <p class="diag-stat"><strong>haris@alphasquad.tech</strong> changed the status from <strong>In-queue</strong> to <strong>In-progress</strong></p>
+          <p class="diag-stat clr-gray">29 Oct, 2022 at 8:32 PM</p>
+          <p class="diag-stat"><strong>haris@alphasquad.tech</strong> changed the status from <strong>In-progress</strong> to <strong>Resolved</strong></p>
+          <p class="diag-stat clr-gray">29 Oct, 2022 at 8:32 PM</p>
+        </div>
+        <div class="update-tckt-main">
+          <a href="#"><p class="update-tckt">Update Ticket</p></a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+     function openmodal(){
+      var modal=document.getElementById("mymodal");
+      var btn=document.getElementById("mybtn");
+      var blur=document.getElementById("blur");
+      modal.style.display="block"
+      blur.style.display="block"
+     }
+     function closemodal(){
+     var close=document.getElementById("close");
+     var modal=document.getElementById("mymodal");
+     var blur=document.getElementById("blur");
+     modal.style.display="none"
+     blur.style.display="none"
+     }
+    //  function openmain(){
+    //   var main=document.getElementById("main");
+    //   var blur=document.getElementById("blur");
+    //   var close=document.getElementById("close");
+    //   modal.style.display="none"
+    //   blur.style.display="none"
+    //  }
+    </script>
+  </body>
+</html>

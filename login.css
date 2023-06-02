@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.logo-img{
+    
+}
+.main{
+    
+    font-family: 'Manrope', sans-serif;
+    background-color: #F5F5F5;
+    padding: 250px 0;
+    width: 100%;
+}
+.main-upper{
+    text-align: center;
+}
+.login-form{
+display: flex;
+justify-content: center;
+margin-top: 32px;
+}
+
+.main-title{
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 34px;
+}
+
+.main-desc{
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 16px;
+}
+
+.login-button{
+    text-align: center;
+    color: #F5F5F5;
+    background-color: #18181B;
+    padding: 10px 174px;
+    border-radius: 8px;
+    margin-top: 33px;
+    width: 100%;
+  
+}
+.login-btn{
+    display: flex;
+    justify-content: center;
+   
+}
+input{
+    color: #A1A1AA;
+   padding: 20px 180px 20px 10px ;
+    border: 1px solid #E4E4E7 ;
+    margin-top:5px ;
+    border-radius: 10px;
+    font-size:16px ;
+}
+label{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+}
+.body-flex{
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+}
+.main-img{
+    width: 100%;
+    background-image: url("./bgrms.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:;
+}
