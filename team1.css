@@ -20,17 +20,21 @@
   text-align: center;
   padding: 40px 0;
 }
-.sidebar-lists {
-  margin-left: 34px;
-  /* margin-bottom: 300px; */
-}
-.sidebar-list {
+.sidebar-lists{
+  padding: 0 20px;
+  }
+  .sidebar-list{
+  padding: 8px 8px;
+  border-radius: 6px;
   display: flex;
   align-items: center;
   gap: 7px;
   font-size: 16px;
   font-weight: 400;
   margin: 32px 0;
+  }
+  .highlite{
+  background-color: #3F3F46;
 }
 .sidebar-lower-img {
   margin: auto;
@@ -61,7 +65,7 @@
 }
 a {
   text-decoration: none;
-  color: #68686f;
+  color: #a1a1aa;
 }
 .header-top {
   /* margin: 20px 24px 20px 24px ; */
@@ -115,6 +119,7 @@ a {
 .add-search input {
   border-radius: 6px;
   padding-left: 10px;
+  padding-right: 20px;
   border: 1px solid #e4e4e7;
 }
 .cancel {
@@ -143,7 +148,10 @@ td {
   border-top: 1px solid #e4e4e7;
   color: #52525b;
 }
-
+.action-btn{
+  color: #18181b;
+  margin: 0 2px;
+}
 .blue {
   color: #2563eb;
   background-color: #eff6ff;

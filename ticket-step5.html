@@ -24,42 +24,40 @@
     <!-- Side bar -->
     <div class="main-page">
       <div id="main">
-      <div class="sidebar">
-        <div class="sidebar-img">
-          <img src="./logo2.png" alt="" />
+        <div class="sidebar">
+          <div class="sidebar-img">
+            <img src="./logo2.png" alt="" />
+          </div>
+          <div class="sidebar-flex">
+            <div class="sidebar-lists">
+              <a href="analytics.html"><p class="sidebar-list">
+                <i class="fa-solid fa-chart-simple"></i> Analytics
+              </p></a>
+              <a href="./tickets.html"><p class="sidebar-list highlite">
+                <i class="fa-solid fa-ticket"></i> Tickets</p></a>
+              <a href="#"><p class="sidebar-list">
+               <i class="fa-solid fa-restroom"></i> Customers
+              </p></a>
+              <a href="#"><p class="sidebar-list">
+               <i class="fa-solid fa-microchip"></i> Hardware
+              </p></a>
+              <a href="./team.html"><p class="sidebar-list">
+               <i class="fa-solid fa-people-group"></i> Team
+              </p></a>
+              <a href="#"><p class="sidebar-list"><i class="fa-solid fa-gears"></i> Settings</p></a>
+              <a href="#"><p class="sidebar-list">
+               <i class="fa-solid fa-tag"></i> Tag Manager
+              </p></a>
+            </div>
+      
+            <div class="sidebar-logout">
+              
+                <p class="clr-white">
+                  <a href="./login.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+                </p>
+            </div>
+          </div>
         </div>
-        <div class="sidebar-flex">
-          <div class="sidebar-lists">
-            <p class="sidebar-list">
-              <a href="./analytics.html"> <i class="fa-solid fa-chart-simple"></i> Analytics</a>
-            </p>
-            <p class="sidebar-list"><a href=""><i class="fa-solid fa-ticket"></i> Tickets</a></p>
-            <p class="sidebar-list">
-              <a href=""><i class="fa-solid fa-restroom"></i> Customers</a>
-            </p>
-            <p class="sidebar-list">
-              <a href=""><i class="fa-solid fa-microchip"></i> Hardware</a>
-            </p>
-            <p class="sidebar-list">
-              <a href=""><i class="fa-solid fa-people-group"></i> Team</a>
-            </p>
-            <p class="sidebar-list"><a href=""><i class="fa-solid fa-gears"></i> Settings</a></p>
-            <p class="sidebar-list">
-              <a href=""><i class="fa-solid fa-tag"></i> Tag Manager</a>
-            </p>
-          </div>
-          <div class="sidebar-lower-img">
-  <img src="./sidebar-lower-img.png" alt="" width="150px" height="190px">
-          </div>
-  
-          <div class="sidebar-logout">
-            
-              <p class="clr-white">
-                <a href="./login.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
-              </p>
-          </div>
-        </div>
-      </div>
       <!-- main-right -->
 
       <div class="main-right container">
@@ -75,130 +73,240 @@
         <div class="ticket-table">
           <table>
             <tr>
-              <th>RMA</th>
-              <th>Status</th>
-              <th>Customer Email</th>
-              <th>Hardware</th>
-              <th>Updated at</th>
-              <th>Actions</th>
+              <th>
+                RMA
+              </th>
+              <th>
+                Status
+              </th>
+              <th>
+                Customer Email
+              </th>
+              <th>
+                Hardware
+              </th>
+              <th>
+                Updated at
+              </th>
+              <th>
+                Actions
+              </th>
             </tr>
-
+          
             <tr>
-              <td>0011754379...</td>
               <td>
-                <div class="pink">Awaiting arrival</div>
+                0011754379...
               </td>
-              <td>georgia.young@example.com</td>
-              <td>Starlight-12 Poseidon</td>
-              <td>15 May 2020 8:30 am</td>
               <td>
-                <i class="fa-regular fa-pen-to-square"></i>
+                <span class="pink">Awaiting arrival</span>
               </td>
-            </tr>
-
-            <tr>
-              <td>0011754380...</td>
-              <td><div class="orange">In-queue</div></td>
-              <td>bill.sanders@example.com</td>
-              <td>Starlight-12 Poseidon</td>
-              <td>15 May 2020 8:00 am</td>
               <td>
-                <i class="fa-regular fa-pen-to-square"></i>
+                georgia.young@example.com
               </td>
-            </tr>
-
-            <tr>
-              <td>0011754381...</td>
-              <td><div class="yellow">In-progress</div></td>
-              <td>michelle.rivera@example.com</td>
-              <td>Starlight-12 Poseidon</td>
-              <td>15 May 2020 9:30 am</td>
               <td>
-                <i class="fa-regular fa-pen-to-square"></i>
+                Starlight-12 Poseidon
+              </td>
+              <td>
+                15 May 2020 8:30 am
+              </td>
+             <td>
+                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
               </td>
             </tr>
-
+          
             <tr>
-              <td>0011754382...</td>
-              <td><div class="green">Completed</div></td>
-              <td>deanna.curtis@example.com</td>
-              <td>Starlight-12 Poseidon</td>
-              <td>15 May 2020 9:30 am</td>
               <td>
-                <i class="fa-regular fa-pen-to-square"></i>
+                0011754380...
+              </td>
+              <td><span class="orange">
+                In-queue</span>
+              </td>
+              <td>
+                bill.sanders@example.com
+              </td>
+              <td>
+                Starlight-12 Poseidon
+              </td>
+              <td>
+                15 May 2020 8:00 am
+              </td>
+             <td>
+                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
               </td>
             </tr>
-
+          
             <tr>
-              <td>0011754383...</td>
-              <td><div class="lightgreen">Completed</div></td>
-              <td>jackson.graham@example.com</td>
-              <td>Starlight-12 Poseidon</td>
-              <td>15 May 2020 9:30 am</td>
               <td>
-                <i class="fa-regular fa-pen-to-square"></i>
+                0011754381...
+              </td>
+              <td><span class="yellow">
+                In-progress</span>
+              </td>
+              <td>
+                michelle.rivera@example.com
+              </td>
+              <td>
+                Starlight-12 Poseidon
+              </td>
+              <td>
+                15 May 2020 9:30 am
+              </td>
+             <td>
+                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
               </td>
             </tr>
-
+          
             <tr>
-              <td>0011754384...</td>
-              <td><div class="purpleblue">In-progress</div></td>
-              <td>georgia.young@example.com</td>
-              <td>Starlight-12 Poseidon</td>
-              <td>15 May 2020 9:30 am</td>
               <td>
-                <i class="fa-regular fa-pen-to-square"></i>
+                0011754382...
+              </td>
+              <td><span class="green">
+                Completed</span>
+              </td>
+              <td>
+                deanna.curtis@example.com
+              </td>
+              <td>
+                Starlight-12 Poseidon
+              </td>
+              <td>
+                15 May 2020 9:30 am
+              </td>
+             <td>
+                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
               </td>
             </tr>
-
+          
             <tr>
-              <td>0011754384...</td>
-              <td><div class="purple">Completed</div></td>
-              <td>willie.jennings@example.com</td>
-              <td>Starlight-12 Poseidon</td>
-              <td>15 May 2020 9:00 am</td>
               <td>
-                <i class="fa-regular fa-pen-to-square"></i>
+                0011754383...
+              </td>
+              <td><span class="lightgreen">
+                Completed</span>
+              </td>
+              <td>
+                jackson.graham@example.com
+              </td>
+              <td>
+                Starlight-12 Poseidon
+              </td>
+              <td>
+                15 May 2020 9:30 am
+              </td>
+             <td>
+                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
               </td>
             </tr>
-
+          
             <tr>
-              <td>0011754384...</td>
-              <td><div class="yellowgreen">Completed</div></td>
-              <td>curtis.weaver@example.com</td>
-              <td>Starlight-12 Poseidon</td>
-              <td>15 May 2020 9:00 am</td>
               <td>
-                <i class="fa-regular fa-pen-to-square"></i>
+                0011754384...
+              </td>
+              <td><span class="purpleblue">
+                In-progress</span>
+              </td>
+              <td>
+                georgia.young@example.com
+              </td>
+              <td>
+                Starlight-12 Poseidon
+              </td>
+              <td>
+                15 May 2020 9:30 am
+              </td>
+             <td>
+                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
               </td>
             </tr>
-
+          
             <tr>
-              <td>0011754384...</td>
-              <td><div class="lightpurple">In-queue</div></td>
-              <td>jessica.hanson@example.com</td>
-              <td>Starlight-12 Poseidon</td>
-              <td>15 May 2020 8:30 am</td>
               <td>
-                <i class="fa-regular fa-pen-to-square"></i>
+                0011754384...
+              </td>
+              <td><span class="purple">
+                Completed</span>
+              </td>
+              <td>
+                willie.jennings@example.com
+              </td>
+              <td>
+                Starlight-12 Poseidon
+              </td>
+              <td>
+                15 May 2020 9:00 am
+              </td>
+             <td>
+                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
               </td>
             </tr>
-
+          
             <tr>
-              <td>0011754384...</td>
-              <td><div class="lightblue">Completed</div></td>
-              <td>debbie.baker@example.com</td>
-              <td>Starlight-12 Poseidon</td>
-              <td>15 May 2020 8:00 am</td>
               <td>
-                <i class="fa-regular fa-pen-to-square"></i>
+                0011754384...
+              </td>
+              <td><span class="yellowgreen">
+                Completed</span>
+              </td>
+              <td>
+                curtis.weaver@example.com
+              </td>
+              <td>
+                Starlight-12 Poseidon
+              </td>
+              <td>
+                15 May 2020 9:00 am
+              </td>
+             <td>
+                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
+              </td>
+            </tr>
+          
+            <tr>
+              <td>
+                0011754384...
+              </td>
+              <td><span class="lightpurple">
+                In-queue</span>
+              </td>
+              <td>
+                jessica.hanson@example.com
+              </td>
+              <td>
+                Starlight-12 Poseidon
+              </td>
+              <td>
+                15 May 2020 8:30 am
+              </td>
+             <td>
+                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
+              </td>
+            </tr>
+          
+            <tr>
+              <td>
+                0011754384...
+              </td>
+              <td><span class="lightblue">
+                Completed</span>
+              </td>
+              <td>
+                debbie.baker@example.com
+              </td>
+              <td>
+                Starlight-12 Poseidon
+              </td>
+              <td>
+                15 May 2020 8:00 am
+              </td>
+             <td>
+                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
               </td>
             </tr>
           </table>
         </div>
       </div>
     </div>
-      <div id="blur" onclick="openmain()"></div>
+      <div id="blur" onclick="closemodal()"></div>
       <div id="mymodal">
         <div class="details-flex">
           <p class="detail-form">Details</p>
@@ -285,13 +393,6 @@
      modal.style.display="none"
      blur.style.display="none"
      }
-    //  function openmain(){
-    //   var main=document.getElementById("main");
-    //   var blur=document.getElementById("blur");
-    //   var close=document.getElementById("close");
-    //   modal.style.display="none"
-    //   blur.style.display="none"
-    //  }
     </script>
   </body>
 </html>

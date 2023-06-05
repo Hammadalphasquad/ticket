@@ -29,17 +29,21 @@
   padding: 40px 0;
 }
 .sidebar-lists{
-margin-left: 34px;
-/* margin-bottom: 300px; */
-}
-.sidebar-list{
+  padding: 0 20px;
+  }
+  .sidebar-list{
+  padding: 8px 8px;
+  border-radius: 6px;
   display: flex;
   align-items: center;
   gap: 7px;
   font-size: 16px;
   font-weight: 400;
   margin: 32px 0;
-}
+  }
+  .highlite{
+     background-color: #3F3F46; 
+  }
 .sidebar-logout{
   text-align: center;
   margin-bottom: 32px;
