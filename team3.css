@@ -91,10 +91,6 @@ a {
   background-color: #18181b;
   border-radius: 6px;
 }
-.add-mem {
-  display: flex;
-  gap: 16px;
-}
 .add-search {
   padding: 20px 10px;
   display: flex;
@@ -103,16 +99,11 @@ a {
   border-radius: 12px;
   margin-top: 10px;
 }
-.add-text {
+#mybtn {
   padding: 10px 20px;
   background-color: #18181b;
   color: #ffffff;
   border-radius: 6px;
-}
-.add-text:hover{
-  background-color: #ffffff;
-  border: 1px solid black;
-  color: black;
 }
 .add-search input {
   border-radius: 6px;
@@ -120,37 +111,19 @@ a {
   padding-right: 20px;
   border: 1px solid #e4e4e7;
 }
-#mybtn {
-  padding: 10px 20px;
-  color: #e11d48;
-  border: 1px solid #e11d48;
-  border-radius: 6px;
-}
-#mybtn:hover{
-  background-color: #e11d48;
-  color: #ffffff;
-}
-.cancel {
-  padding: 10px 20px;
-}
-.cancel:hover{
-  color: #18181b;
-  border: 1px solid black;
-  border-radius: 6px;
-}
-
 /* ticket status */
 
 .ticket-table {
   border: 1px solid #e4e4e7;
   border-radius: 12px;
   padding: 10px;
-  margin: 20px 0;
+  margin-top: 10px;
 }
 table {
   width: 100%;
 }
 th {
+  padding: 15px 0;
   text-align: left;
 }
 td {
@@ -189,94 +162,74 @@ tr {
   font-weight: 500;
 
 }
-
-/* blur-section */
-
 #blur {
   display: none;
-  max-width: 100%;
+  position: fixed;
+  width: 100%;
   backdrop-filter: blur(3px);
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 1;
-  position: fixed;
   inset: 0;
 }
 
-/* delete-section */
+/* my-modal */
 
-#mymodal{
+#mymodal {
   display: none;
-  height: 249px;
-  width: 481px;
   z-index: 2;
-  margin: auto;
-  inset: 0;
+  position: absolute;
   background-color: #ffffff;
-  position: fixed;
-  padding: 30px;
-  text-align: center;
-  border-radius: 12px;
+  height: 100vh;
+  right:0;
+  inset: 0 1 0 0;
+  width: 384px;
+  padding: 0 24px;
+  top: 0;
 }
-.del-icon {
-  color: #e11d48;
+.form-title {
   font-size: 20px;
-  padding: 17px 22px;
-  background-color: #fff1f2;
-  border-radius: 100px;
+  font-weight: 800;
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
-.del-title {
-  font-size: 18px;
+
+.member-data label {
+  font-size: 12px;
+  line-height: 12px;
   font-weight: 600;
-  color: #262626;
-  margin-top: 20px;
 }
-.del-subt {
-  font-size: 14px;
-  font-weight: 400;
-  color: #525252;
-  line-height: 150%;
-  margin-top: 8px;
-}
-#cancel-btn {
-  padding: 16px;
-  font-size: 14px;
-  font-weight: 600;
-  color: #18181b;
-  border: 1px solid #18181b;
-  border-radius: 12px;
-}
-#cancel-btn:hover{
-  background-color: black;
-  color: #ffffff;
-  
-}
-#confirm-btn:hover {
-  background-color: #ffffff;
-  color: #E11D48
-  ;
-  border:1px solid #E11D48;
-}
-.cancel-btn:hover{
-  background-color: #18181b;
-  color: #ffffff;
-  border: 1px solid black;
-}
-#confirm-btn {
-  padding: 16px;
-  background-color: #e11d48;
-  color: #ffffff;
-  border-radius: 12px;
-}
-.buttons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
+.member-data input {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 14px;
+  border: 1px solid #e4e4e7;
+  border-radius: 6px;
+  width: 100%;
+  margin-bottom: 30px;
   margin-top: 10px;
 }
+.form-member {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 12px 24px;
+  background-color: #000000;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.form-cancel {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 24px;
+  border: 1px solid #e4e4e7;
+  border-radius: 6px;
+}
 #close {
-  font-size: 20px;
+  color: #000000;
   position: absolute;
-  top: 10px;
+  top: 20px;
   right: 20px;
-  color: black;
+  font-size: 20px;
 }

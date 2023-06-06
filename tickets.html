@@ -22,290 +22,396 @@
   </head>
   <body>
     <!-- Side bar -->
-<div class="main-page">
-  <div class="sidebar">
-    <div class="sidebar-img">
-      <img src="./logo2.png" alt="" />
-    </div>
-    <div class="sidebar-flex">
-      <div class="sidebar-lists">
-        <a href="createticket.html"><p class="sidebar-list">
-          <i class="fa-solid fa-chart-simple"></i> Analytics
-        </p></a>
-        <a href="./ticket-step3.html"><p class="sidebar-list highlite">
-          <i class="fa-solid fa-ticket"></i> Tickets</p></a>
-        <a href="#"><p class="sidebar-list">
-         <i class="fa-solid fa-restroom"></i> Customers
-        </p></a>
-        <a href="#"><p class="sidebar-list">
-         <i class="fa-solid fa-microchip"></i> Hardware
-        </p></a>
-        <a href="./team.html"><p class="sidebar-list">
-         <i class="fa-solid fa-people-group"></i> Team
-        </p></a>
-        <a href="#"><p class="sidebar-list"><i class="fa-solid fa-gears"></i> Settings</p></a>
-        <a href="#"><p class="sidebar-list">
-         <i class="fa-solid fa-tag"></i> Tag Manager
-        </p></a>
+    <div class="main-page">
+      <div class="sidebar">
+        <div class="sidebar-img">
+          <img src="./logo2.png" alt="" />
+        </div>
+        <div class="sidebar-flex">
+          <div class="sidebar-lists">
+            <a href="analytics.html"><p class="sidebar-list">
+              <i class="fa-solid fa-chart-simple"></i> Analytics
+            </p></a>
+            <a href="tickets.html"><p class="sidebar-list highlite">
+              <i class="fa-solid fa-ticket"></i> Tickets</p></a>
+            <a href="customers.html"><p class="sidebar-list">
+             <i class="fa-solid fa-restroom"></i> Customers
+            </p></a>
+            <a href="hardware.html"><p class="sidebar-list">
+             <i class="fa-solid fa-microchip"></i> Hardware
+            </p></a>
+            <a href="team.html"><p class="sidebar-list">
+             <i class="fa-solid fa-people-group"></i> Team
+            </p></a>
+            <a href="#"><p class="sidebar-list"><i class="fa-solid fa-gears"></i> Settings</p></a>
+            <a href="#"><p class="sidebar-list">
+             <i class="fa-solid fa-tag"></i> Tag Manager
+            </p></a>
+          </div>
+    
+          <div class="sidebar-logout">
+            
+              <p class="clr-white">
+                <a href="./login.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+              </p>
+          </div>
+        </div>
+      </div>
+      <!-- main-right -->
+
+      <div class="main-right container">
+        <div
+        class="header-top">
+          <h3 class="header-top-title">Tickets</h3>
+         
+            <div id="mybtn" onclick="openmodal()">
+            <p class="header-top-subt">
+              <i class="fa-solid fa-circle-plus" class="create-icon"></i> CREATE
+              TICKET
+            </p></div>
+        </div>
+        <div class="ticket-table">
+          <table>
+            <tr>
+              <th>
+                RMA
+              </th>
+              <th>
+                Status
+              </th>
+              <th>
+                Customer Email
+              </th>
+              <th>
+                Hardware
+              </th>
+              <th>
+                Updated at
+              </th>
+              <th>
+                Actions
+              </th>
+            </tr>
+          
+            <tr>
+              <td>
+                0011754379...
+              </td>
+              <td>
+                <span class="pink">Awaiting arrival</span>
+              </td>
+              <td>
+                georgia.young@example.com
+              </td>
+              <td>
+                Starlight-12 Poseidon
+              </td>
+              <td>
+                15 May 2020 8:30 am
+              </td>
+              <td>
+                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
+              </td>
+            </tr>
+          
+            <tr>
+              <td>
+                0011754380...
+              </td>
+              <td><span class="orange">
+                In-queue</span>
+              </td>
+              <td>
+                bill.sanders@example.com
+              </td>
+              <td>
+                Starlight-12 Poseidon
+              </td>
+              <td>
+                15 May 2020 8:00 am
+              </td>
+              <td>
+                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
+              </td>
+            </tr>
+          
+            <tr>
+              <td>
+                0011754381...
+              </td>
+              <td><span class="yellow">
+                In-progress</span>
+              </td>
+              <td>
+                michelle.rivera@example.com
+              </td>
+              <td>
+                Starlight-12 Poseidon
+              </td>
+              <td>
+                15 May 2020 9:30 am
+              </td>
+              <td>
+                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
+              </td>
+            </tr>
+          
+            <tr>
+              <td>
+                0011754382...
+              </td>
+              <td><span class="green">
+                Completed</span>
+              </td>
+              <td>
+                deanna.curtis@example.com
+              </td>
+              <td>
+                Starlight-12 Poseidon
+              </td>
+              <td>
+                15 May 2020 9:30 am
+              </td>
+              <td>
+                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
+              </td>
+            </tr>
+          
+            <tr>
+              <td>
+                0011754383...
+              </td>
+              <td><span class="lightgreen">
+                Completed</span>
+              </td>
+              <td>
+                jackson.graham@example.com
+              </td>
+              <td>
+                Starlight-12 Poseidon
+              </td>
+              <td>
+                15 May 2020 9:30 am
+              </td>
+              <td>
+                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
+              </td>
+            </tr>
+          
+            <tr>
+              <td>
+                0011754384...
+              </td>
+              <td><span class="purpleblue">
+                In-progress</span>
+              </td>
+              <td>
+                georgia.young@example.com
+              </td>
+              <td>
+                Starlight-12 Poseidon
+              </td>
+              <td>
+                15 May 2020 9:30 am
+              </td>
+              <td>
+                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
+              </td>
+            </tr>
+          
+            <tr>
+              <td>
+                0011754384...
+              </td>
+              <td><span class="purple">
+                Completed</span>
+              </td>
+              <td>
+                willie.jennings@example.com
+              </td>
+              <td>
+                Starlight-12 Poseidon
+              </td>
+              <td>
+                15 May 2020 9:00 am
+              </td>
+              <td>
+                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
+              </td>
+            </tr>
+          
+            <tr>
+              <td>
+                0011754384...
+              </td>
+              <td><span class="yellowgreen">
+                Completed</span>
+              </td>
+              <td>
+                curtis.weaver@example.com
+              </td>
+              <td>
+                Starlight-12 Poseidon
+              </td>
+              <td>
+                15 May 2020 9:00 am
+              </td>
+              <td>
+                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
+              </td>
+            </tr>
+          
+            <tr>
+              <td>
+                0011754384...
+              </td>
+              <td><span class="lightpurple">
+                In-queue</span>
+              </td>
+              <td>
+                jessica.hanson@example.com
+              </td>
+              <td>
+                Starlight-12 Poseidon
+              </td>
+              <td>
+                15 May 2020 8:30 am
+              </td>
+              <td>
+                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
+              </td>
+            </tr>
+          
+            <tr>
+              <td>
+                0011754384...
+              </td>
+              <td><span class="lightblue">
+                Completed</span>
+              </td>
+              <td>
+                debbie.baker@example.com
+              </td>
+              <td>
+                Starlight-12 Poseidon
+              </td>
+              <td>
+                15 May 2020 8:00 am
+              </td>
+              <td>
+                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
+              </td>
+            </tr>
+          </table>
+        </div>
       </div>
 
-      <div class="sidebar-logout">
+      <div id="blur" onclick="closemodal()"></div>
+      <div id="mymodal" >
+        <div class="details-flex">
+          <p class="detail-form">Details</p>
+
+          
+            <a href="#" id="close" onclick="closemodal()"
+              ><i class="fa-solid fa-xmark" class="cross"></i
+            ></a>
         
-          <p class="clr-white">
-            <a href="./login.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
-          </p>
+        </div>
+        <div class="detail-title">
+          <p class="detail-no">RMA: 0011754379</p>
+          <select name="status" id="status" class="status-edit">
+            <option value="status">status</option>
+          </select>
+        </div>
+        <p class="detail-subt">Diagnosis Info</p>
+        <div class="diagnosis-main">
+          <label class="hardware-title" for="hardware">Hardware name</label
+          ><br />
+          <input
+            type="text"
+            name="hardware"
+            id="hardware"
+            placeholder="Starligh-12 hades"
+            class="hardware-input"
+          /><br />
+          <label class="hardware-title" for="issue">Hardware issue</label><br />
+          <input
+            type="text"
+            name="issue"
+            id="issue"
+            placeholder="Mouse scroll wheel is slow and annoying to deal with is it possible for your mouse to get slow? If it is how do you clean the inside of your mouse I can't find the screws to get inside of it."
+            class="hardware-input1"
+          />
+        </div>
+
+        <select name="diagnosis" id="diagnosis" class="diagnosis">
+          <option value="diagnosis1">Diagnosis 1</option>
+        </select>
+        <select name="diagnosis2" id="diagnosi2" class="diagnosis">
+          <option value="diagnosis2">Diagnosis 2</option>
+        </select>
+
+        <div class="diagnosis-label-desc">
+<label for="diag-label">Diagnos Label</label><br>
+<input type="text" class="diag-input" name="diag-label" placeholder="Enter title"><br>
+<label for="diag-label">Diagnos Description</label><br>
+<input type="text" class="diag-input" name="diag-label" placeholder="Enter description">
+<div class="media-main">
+  
+<a href=""><div class="upload-media">
+<p class="media-text">
+  Upload media
+</p>
+<i class="fa-solid fa-photo-film"></i>
+</div></a>
+
+</div>
+        </div>
+        <div class="add-diagnosis-main">
+          <a href="#"><div class="add-diagnosis">
+           <i class="fa-solid fa-circle-plus"></i>
+            <p class="diagnosis-text">Add Diagnosis</p>
+          </div></a>
+        </div>
+
+        <form action="#">
+          <p>Customer damage</p>
+        <input type="radio" id="Yes" name="damage" value="Yes">
+        <label for="Yes">Yes</label><br>
+        <input type="radio" id="No" name="damage" value="No">
+        <label for="css">No</label><br>
+        
+          <br>  
+        
+          <p>Repair/replaced</p>
+          <input type="radio" id="Yes" name="repair" value="yes">
+          <label for="Yes">Yes</label><br>
+          <input type="radio" id="No" name="repair" value="No">
+          <label for="No">No</label><br>  
+        
+        </form>
+        <div class="update-tckt-main">
+          <a href="#"><p class="update-tckt">Update Ticket</p></a>
+        </div>
       </div>
     </div>
-  </div>
-    <!-- main-right -->
 
-    <div class="main-right container">
-      <div class="header-top">
-        <h3 class="header-top-title">Tickets</h3>
-        <a href="./ticket-step3.html">
-          <p class="header-top-subt">
-            <i class="fa-solid fa-circle-plus" class="create-icon"></i> CREATE
-            TICKET
-          </p></a
-        >
-      </div>
-      <div class="ticket-table">
-<table>
-  <tr>
-    <th>
-      RMA
-    </th>
-    <th>
-      Status
-    </th>
-    <th>
-      Customer Email
-    </th>
-    <th>
-      Hardware
-    </th>
-    <th>
-      Updated at
-    </th>
-    <th>
-      Actions
-    </th>
-  </tr>
+    <script>
+   function openmodal(){
+    var modal=document.getElementById("mymodal");
+    var btn=document.getElementById("mybtn");
+    var blur=document.getElementById("blur");
+    modal.style.display="block"
+    blur.style.display="block"
+   }
 
-  <tr>
-    <td>
-      0011754379...
-    </td>
-    <td>
-      <span class="pink">Awaiting arrival</span>
-    </td>
-    <td>
-      georgia.young@example.com
-    </td>
-    <td>
-      Starlight-12 Poseidon
-    </td>
-    <td>
-      15 May 2020 8:30 am
-    </td>
-    <td>
-      <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
-    </td>
-  </tr>
-
-  <tr>
-    <td>
-      0011754380...
-    </td>
-    <td><span class="orange">
-      In-queue</span>
-    </td>
-    <td>
-      bill.sanders@example.com
-    </td>
-    <td>
-      Starlight-12 Poseidon
-    </td>
-    <td>
-      15 May 2020 8:00 am
-    </td>
-   <td>
-                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
-              </td>
-  </tr>
-
-  <tr>
-    <td>
-      0011754381...
-    </td>
-    <td><span class="yellow">
-      In-progress</span>
-    </td>
-    <td>
-      michelle.rivera@example.com
-    </td>
-    <td>
-      Starlight-12 Poseidon
-    </td>
-    <td>
-      15 May 2020 9:30 am
-    </td>
-   <td>
-                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
-              </td>
-  </tr>
-
-  <tr>
-    <td>
-      0011754382...
-    </td>
-    <td><span class="green">
-      Completed</span>
-    </td>
-    <td>
-      deanna.curtis@example.com
-    </td>
-    <td>
-      Starlight-12 Poseidon
-    </td>
-    <td>
-      15 May 2020 9:30 am
-    </td>
-   <td>
-                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
-              </td>
-  </tr>
-
-  <tr>
-    <td>
-      0011754383...
-    </td>
-    <td><span class="lightgreen">
-      Completed</span>
-    </td>
-    <td>
-      jackson.graham@example.com
-    </td>
-    <td>
-      Starlight-12 Poseidon
-    </td>
-    <td>
-      15 May 2020 9:30 am
-    </td>
-   <td>
-                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
-              </td>
-  </tr>
-
-  <tr>
-    <td>
-      0011754384...
-    </td>
-    <td><span class="purpleblue">
-      In-progress</span>
-    </td>
-    <td>
-      georgia.young@example.com
-    </td>
-    <td>
-      Starlight-12 Poseidon
-    </td>
-    <td>
-      15 May 2020 9:30 am
-    </td>
-   <td>
-                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
-              </td>
-  </tr>
-
-  <tr>
-    <td>
-      0011754384...
-    </td>
-    <td><span class="purple">
-      Completed</span>
-    </td>
-    <td>
-      willie.jennings@example.com
-    </td>
-    <td>
-      Starlight-12 Poseidon
-    </td>
-    <td>
-      15 May 2020 9:00 am
-    </td>
-   <td>
-                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
-              </td>
-  </tr>
-
-  <tr>
-    <td>
-      0011754384...
-    </td>
-    <td><span class="yellowgreen">
-      Completed</span>
-    </td>
-    <td>
-      curtis.weaver@example.com
-    </td>
-    <td>
-      Starlight-12 Poseidon
-    </td>
-    <td>
-      15 May 2020 9:00 am
-    </td>
-   <td>
-                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
-              </td>
-  </tr>
-
-  <tr>
-    <td>
-      0011754384...
-    </td>
-    <td><span class="lightpurple">
-      In-queue</span>
-    </td>
-    <td>
-      jessica.hanson@example.com
-    </td>
-    <td>
-      Starlight-12 Poseidon
-    </td>
-    <td>
-      15 May 2020 8:30 am
-    </td>
-   <td>
-                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
-              </td>
-  </tr>
-
-  <tr>
-    <td>
-      0011754384...
-    </td>
-    <td><span class="lightblue">
-      Completed</span>
-    </td>
-    <td>
-      debbie.baker@example.com
-    </td>
-    <td>
-      Starlight-12 Poseidon
-    </td>
-    <td>
-      15 May 2020 8:00 am
-    </td>
-   <td>
-                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
-              </td>
-  </tr>
-</table>
-
-</div>
-</div>
-
-</div>
+   function closemodal(){
+    var modal=document.getElementById("mymodal");
+    var blur=document.getElementById("blur")
+    var close=document.getElementById("close")
+    modal.style.display="none";
+    blur.style.display="none"
+   }
+    </script>
   </body>
 </html>

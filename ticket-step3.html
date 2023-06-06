@@ -29,18 +29,18 @@
         </div>
         <div class="sidebar-flex">
           <div class="sidebar-lists">
-            <a href="createticket.html"><p class="sidebar-list">
+            <a href="analytics.html"><p class="sidebar-list">
               <i class="fa-solid fa-chart-simple"></i> Analytics
             </p></a>
-            <a href="./ticket-step3.html"><p class="sidebar-list highlite">
+            <a href="tickets.html"><p class="sidebar-list highlite">
               <i class="fa-solid fa-ticket"></i> Tickets</p></a>
-            <a href="#"><p class="sidebar-list">
+            <a href="customers.html"><p class="sidebar-list">
              <i class="fa-solid fa-restroom"></i> Customers
             </p></a>
             <a href="#"><p class="sidebar-list">
              <i class="fa-solid fa-microchip"></i> Hardware
             </p></a>
-            <a href="./team3.html"><p class="sidebar-list">
+            <a href="team.html"><p class="sidebar-list">
              <i class="fa-solid fa-people-group"></i> Team
             </p></a>
             <a href="#"><p class="sidebar-list"><i class="fa-solid fa-gears"></i> Settings</p></a>
@@ -64,12 +64,11 @@
         class="header-top">
           <h3 class="header-top-title">Tickets</h3>
           <a href="#">
-            <div id="mybtn" onclick="openmodal()">
-            <p class="header-top-subt">
+            <p id="mybtn" onclick="openmodal()">
               <i class="fa-solid fa-circle-plus" class="create-icon"></i> CREATE
               TICKET
             </p></a
-          ></div>
+          >
         </div>
         <div class="ticket-table">
           <table>
@@ -110,7 +109,7 @@
               <td>
                 15 May 2020 8:30 am
               </td>
-              <td>
+             <td>
                 <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
               </td>
             </tr>
@@ -131,7 +130,7 @@
               <td>
                 15 May 2020 8:00 am
               </td>
-              <td>
+             <td>
                 <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
               </td>
             </tr>
@@ -152,7 +151,7 @@
               <td>
                 15 May 2020 9:30 am
               </td>
-              <td>
+             <td>
                 <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
               </td>
             </tr>
@@ -173,7 +172,7 @@
               <td>
                 15 May 2020 9:30 am
               </td>
-              <td>
+             <td>
                 <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
               </td>
             </tr>
@@ -194,7 +193,7 @@
               <td>
                 15 May 2020 9:30 am
               </td>
-              <td>
+             <td>
                 <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
               </td>
             </tr>
@@ -215,7 +214,7 @@
               <td>
                 15 May 2020 9:30 am
               </td>
-              <td>
+             <td>
                 <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
               </td>
             </tr>
@@ -236,7 +235,7 @@
               <td>
                 15 May 2020 9:00 am
               </td>
-              <td>
+             <td>
                 <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
               </td>
             </tr>
@@ -257,7 +256,7 @@
               <td>
                 15 May 2020 9:00 am
               </td>
-              <td>
+             <td>
                 <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
               </td>
             </tr>
@@ -278,7 +277,7 @@
               <td>
                 15 May 2020 8:30 am
               </td>
-              <td>
+             <td>
                 <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
               </td>
             </tr>
@@ -299,7 +298,7 @@
               <td>
                 15 May 2020 8:00 am
               </td>
-              <td>
+             <td>
                 <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
               </td>
             </tr>
@@ -308,15 +307,15 @@
       </div>
 
       <div id="blur" onclick="closemodal()"></div>
-      <div id="mymodal" >
+      <div id="mymodal">
         <div class="details-flex">
           <p class="detail-form">Details</p>
 
-          
-            <a href="#" id="close" onclick="closemodal()"
-              ><i class="fa-solid fa-xmark" class="cross"></i
-            ></a>
-        
+          <a href="#"
+          ><div id="close" onclick="closemodal()">
+           <i class="fa-solid fa-xmark" class="cross"></i
+            > </div></a>
+         
         </div>
         <div class="detail-title">
           <p class="detail-no">RMA: 0011754379</p>
@@ -351,23 +350,17 @@
         <select name="diagnosis2" id="diagnosi2" class="diagnosis">
           <option value="diagnosis2">Diagnosis 2</option>
         </select>
-
-        <div class="diagnosis-label-desc">
-<label for="diag-label">Diagnos Label</label><br>
-<input type="text" class="diag-input" name="diag-label" placeholder="Enter title"><br>
-<label for="diag-label">Diagnos Description</label><br>
-<input type="text" class="diag-input" name="diag-label" placeholder="Enter description">
-<div class="media-main">
-  
-<a href=""><div class="upload-media">
-<p class="media-text">
-  Upload media
-</p>
-<i class="fa-solid fa-photo-film"></i>
-</div></a>
-
-</div>
-        </div>
+        <div class="diagnosis-3-main">
+        <select name="diagnosis3" id="diagnosi2" class="diagnosis-3">
+          <option value="diagnosis2">Diagnosis 3</option>
+        </select>
+        <div class="diagnosis-img-main">
+        <a href="#"><div class="diagnosis-img">
+          <i class="fa-regular fa-image"></i>
+        </div></a>
+      </div>
+       </div>
+       
         <div class="add-diagnosis-main">
           <a href="#"><div class="add-diagnosis">
            <i class="fa-solid fa-circle-plus"></i>
@@ -398,21 +391,21 @@
     </div>
 
     <script>
-   function openmodal(){
-    var modal=document.getElementById("mymodal");
-    var btn=document.getElementById("mybtn");
-    var blur=document.getElementById("blur");
-    modal.style.display="block"
-    blur.style.display="block"
-   }
+     function openmodal(){
+      var modal=document.getElementById("mymodal");
+      var btn=document.getElementById("mybtn");
+      var blur=document.getElementById("blur");
+      modal.style.display="block"
+      blur.style.display="block"
+     }
 
-   function closemodal(){
-    var modal=document.getElementById("mymodal");
-    var blur=document.getElementById("blur")
-    var close=document.getElementById("close")
-    modal.style.display="none";
-    blur.style.display="none"
-   }
+     function closemodal(){
+      var modal=document.getElementById("mymodal");
+      var blur=document.getElementById("blur");
+      var close=document.getElementById("close");
+      modal.style.display="none"
+      blur.style.display="none"
+     }
     </script>
   </body>
 </html>

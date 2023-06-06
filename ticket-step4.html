@@ -23,45 +23,45 @@
   <body>
     <!-- Side bar -->
     <div class="main-page">
-      <div class="sidebar">
-        <div class="sidebar-img">
-          <img src="./logo2.png" alt="" />
-        </div>
-        <div class="sidebar-flex">
-          <div class="sidebar-lists">
-            <a href="analytics.html"><p class="sidebar-list">
-              <i class="fa-solid fa-chart-simple"></i> Analytics
-            </p></a>
-            <a href="./tickets.html"><p class="sidebar-list highlite">
-              <i class="fa-solid fa-ticket"></i> Tickets</p></a>
-            <a href="#"><p class="sidebar-list">
-             <i class="fa-solid fa-restroom"></i> Customers
-            </p></a>
-            <a href="#"><p class="sidebar-list">
-             <i class="fa-solid fa-microchip"></i> Hardware
-            </p></a>
-            <a href="./team.html"><p class="sidebar-list">
-             <i class="fa-solid fa-people-group"></i> Team
-            </p></a>
-            <a href="#"><p class="sidebar-list"><i class="fa-solid fa-gears"></i> Settings</p></a>
-            <a href="#"><p class="sidebar-list">
-             <i class="fa-solid fa-tag"></i> Tag Manager
-            </p></a>
+      <div id="main">
+        <div class="sidebar">
+          <div class="sidebar-img">
+            <img src="./logo2.png" alt="" />
           </div>
-    
-          <div class="sidebar-logout">
-            
-              <p class="clr-white">
-                <a href="./login.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
-              </p>
+          <div class="sidebar-flex">
+            <div class="sidebar-lists">
+              <a href="analytics.html"><p class="sidebar-list">
+                <i class="fa-solid fa-chart-simple"></i> Analytics
+              </p></a>
+              <a href="tickets.html"><p class="sidebar-list highlite">
+                <i class="fa-solid fa-ticket"></i> Tickets</p></a>
+              <a href="customers.html"><p class="sidebar-list">
+               <i class="fa-solid fa-restroom"></i> Customers
+              </p></a>
+              <a href="#"><p class="sidebar-list">
+               <i class="fa-solid fa-microchip"></i> Hardware
+              </p></a>
+              <a href="team.html"><p class="sidebar-list">
+               <i class="fa-solid fa-people-group"></i> Team
+              </p></a>
+              <a href="#"><p class="sidebar-list"><i class="fa-solid fa-gears"></i> Settings</p></a>
+              <a href="#"><p class="sidebar-list">
+               <i class="fa-solid fa-tag"></i> Tag Manager
+              </p></a>
+            </div>
+      
+            <div class="sidebar-logout">
+              
+                <p class="clr-white">
+                  <a href="./login.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+                </p>
+            </div>
           </div>
         </div>
-      </div>
       <!-- main-right -->
 
       <div class="main-right container">
-        <div
-        class="header-top">
+        <div class="header-top">
           <h3 class="header-top-title">Tickets</h3>
           <a href="#">
             <p id="mybtn" onclick="openmodal()">
@@ -305,7 +305,7 @@
           </table>
         </div>
       </div>
-
+    </div>
       <div id="blur" onclick="closemodal()"></div>
       <div id="mymodal">
         <div class="details-flex">
@@ -314,8 +314,8 @@
           <a href="#"
           ><div id="close" onclick="closemodal()">
            <i class="fa-solid fa-xmark" class="cross"></i
-            > </div></a>
-         
+            >
+          </div></a>
         </div>
         <div class="detail-title">
           <p class="detail-no">RMA: 0011754379</p>
@@ -350,40 +350,28 @@
         <select name="diagnosis2" id="diagnosi2" class="diagnosis">
           <option value="diagnosis2">Diagnosis 2</option>
         </select>
-        <div class="diagnosis-3-main">
-        <select name="diagnosis3" id="diagnosi2" class="diagnosis-3">
+
+        <select name="diagnosis3" id="diagnosi2" class="diagnosis">
           <option value="diagnosis2">Diagnosis 3</option>
         </select>
-        <div class="diagnosis-img-main">
-        <a href="#"><div class="diagnosis-img">
-          <i class="fa-regular fa-image"></i>
-        </div></a>
-      </div>
-       </div>
-       
+
         <div class="add-diagnosis-main">
-          <a href="#"><div class="add-diagnosis">
-           <i class="fa-solid fa-circle-plus"></i>
-            <p class="diagnosis-text">Add Diagnosis</p>
-          </div></a>
+          <a href="#"
+            ><div class="add-diagnosis">
+              <i class="fa-solid fa-circle-plus"></i>
+              <p class="diagnosis-text">Add Diagnosis</p>
+            </div></a
+          >
         </div>
 
-        <form action="#">
-          <p>Customer damage</p>
-        <input type="radio" id="Yes" name="damage" value="Yes">
-        <label for="Yes">Yes</label><br>
-        <input type="radio" id="No" name="damage" value="No">
-        <label for="css">No</label><br>
-        
-          <br>  
-        
-          <p>Repair/replaced</p>
-          <input type="radio" id="Yes" name="repair" value="yes">
-          <label for="Yes">Yes</label><br>
-          <input type="radio" id="No" name="repair" value="No">
-          <label for="No">No</label><br>  
-        
-        </form>
+        <div class="diagnosis-status">
+          <p class="diag-stat"><strong>haris@alphasquad.tech</strong> changed the status from <strong>Unit Arrival</strong> to <strong>In-queue</strong></p>
+          <p class="diag-stat clr-gray">29 Oct, 2022 at 8:32 PM</p>
+          <p class="diag-stat"><strong>haris@alphasquad.tech</strong> changed the status from <strong>In-queue</strong> to <strong>In-progress</strong></p>
+          <p class="diag-stat clr-gray">29 Oct, 2022 at 8:32 PM</p>
+          <p class="diag-stat"><strong>haris@alphasquad.tech</strong> changed the status from <strong>In-progress</strong> to <strong>Resolved</strong></p>
+          <p class="diag-stat clr-gray">29 Oct, 2022 at 8:32 PM</p>
+        </div>
         <div class="update-tckt-main">
           <a href="#"><p class="update-tckt">Update Ticket</p></a>
         </div>
@@ -398,13 +386,12 @@
       modal.style.display="block"
       blur.style.display="block"
      }
-
      function closemodal(){
-      var modal=document.getElementById("mymodal");
-      var blur=document.getElementById("blur");
-      var close=document.getElementById("close");
-      modal.style.display="none"
-      blur.style.display="none"
+     var close=document.getElementById("close");
+     var modal=document.getElementById("mymodal");
+     var blur=document.getElementById("blur");
+     modal.style.display="none"
+     blur.style.display="none"
      }
     </script>
   </body>

@@ -22,52 +22,51 @@
   </head>
   <body>
     <!-- Side bar -->
-
-    <div class="sidebar">
-      <div class="sidebar-img">
-        <img src="./logo2.png" alt="" />
+<div class="main-page">
+  <div class="sidebar">
+    <div class="sidebar-img">
+      <img src="./logo2.png" alt="" />
+    </div>
+    <div class="sidebar-flex">
+      <div class="sidebar-lists">
+        <a href="analytics.html"><p class="sidebar-list highlite">
+          <i class="fa-solid fa-chart-simple"></i> Analytics
+        </p></a>
+        <a href="tickets.html"><p class="sidebar-list">
+          <i class="fa-solid fa-ticket"></i> Tickets</p></a>
+        <a href="customers.html"><p class="sidebar-list">
+         <i class="fa-solid fa-restroom"></i> Customers
+        </p></a>
+        <a href="hardware.html"><p class="sidebar-list">
+         <i class="fa-solid fa-microchip"></i> Hardware
+        </p></a>
+        <a href="team.html"><p class="sidebar-list">
+         <i class="fa-solid fa-people-group"></i> Team
+        </p></a>
+        <a href="#"><p class="sidebar-list"><i class="fa-solid fa-gears"></i> Settings</p></a>
+        <a href="#"><p class="sidebar-list">
+         <i class="fa-solid fa-tag"></i> Tag Manager
+        </p></a>
       </div>
-      <div class="sidebar-flex">
-        <div class="sidebar-lists">
-          <a href="createticket.html"><p class="sidebar-list highlite">
-            <i class="fa-solid fa-chart-simple"></i> Analytics
-          </p></a>
-          <a href="./ticket-step3.html"><p class="sidebar-list">
-            <i class="fa-solid fa-ticket"></i> Tickets</p></a>
-          <a href="#"><p class="sidebar-list">
-           <i class="fa-solid fa-restroom"></i> Customers
-          </p></a>
-          <a href="#"><p class="sidebar-list">
-           <i class="fa-solid fa-microchip"></i> Hardware
-          </p></a>
-          <a href="./team.html"><p class="sidebar-list">
-           <i class="fa-solid fa-people-group"></i> Team
-          </p></a>
-          <a href="#"><p class="sidebar-list"><i class="fa-solid fa-gears"></i> Settings</p></a>
-          <a href="#"><p class="sidebar-list">
-           <i class="fa-solid fa-tag"></i> Tag Manager
-          </p></a>
-        </div>
 
-        <div class="sidebar-logout">
-          
-            <p class="clr-white">
-              <a href="./login.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
-            </p>
-        </div>
+      <div class="sidebar-logout">
+      <a href="./login.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
       </div>
     </div>
+  </div>
     <!-- main-right -->
 
     <div class="main-right container">
       <div class="header-top">
         <h3 class="header-top-title">Analytics</h3>
-        <a href="./createticket.html">
-          <p class="header-top-subt">
+        
+       <div 
+          onclick="openmodal()" class="mybtn"
+          >
             <i class="fa-solid fa-circle-plus" class="create-icon"></i> CREATE
             TICKET
-          </p></a
-        >
+          </div>
+      
       </div>
 
       <div class="header-lower">
@@ -159,6 +158,248 @@
         </div>
       </div>
     </div>
+
+    <!-- blur -->
+
+    <div id="blur" onclick="closemodal()">
+
+    </div>
+    <div id="blur2" onclick="closeinfo2()">
+
+    </div>
+<!-- customerinfo-modal -->
+
+    <div class="mymodal" id="mymodal">
+
+       <div id="customerinfo-one">
+      <p class="create-ticket">
+Create Ticket
+    </p>
+    <a href="#"><span id="close" onclick="closemodal()">
+      <i class="fa-solid fa-xmark"></i>
+    </span></a>
+<div class="ct-header">
+ <div class="ct-list">
+<p class="ct-title">
+1
+</p>
+<p class="ct-subt">
+Customer info
+</p>
+ </div>
+ <div class="ct-list">
+  <p class="ct-title">
+  2
+  </p>
+  <p class="ct-subt">
+  Repair Ticket
+  </p>
+   </div>
+   <div class="ct-list">
+    <p class="ct-title">
+    3
+    </p>
+    <p class="ct-subt">
+    Ticket issued
+    </p>
+     </div>
+</div>
+<p class="custmr-title">
+  Customer Info
+</p>
+<p class="custmr-subt">
+  Complete information related to the customer is required.
+</p>
+
+<div class="form-body">
+<div class="custmr-info">
+<div class="left-sec">
+<form action="#">
+  <label for="email" class="form-label">Customer Email</label>
+  <br>
+  <input type="text" class="form-input" name="email" id="email" placeholder="Enter email">
+</form>
+</div>
+<div class="right-sec">
+  <form action="#">
+    <label for="number" class="form-label" >Order Number</label>
+    <br>
+    <input type="text" class="form-input" name="number" id="number" placeholder="Enter order number">
+  </form>
+  </div>
+</div>
+
+<div class="custmr-info">
+  <div class="left-sec">
+  <form action="#">
+    <label for="fname" class="form-label" class="form-label">First Name</label>
+    <br>
+    <input type="text" class="form-input" name="fname" id="fname" placeholder="Enter first name">
+  </form>
+  </div>
+  <div class="right-sec">
+    <form action="#">
+      <label for="lname" class="form-label">Last Name</label>
+      <br>
+      <input type="text" class="form-input" name="lname" id="lname" placeholder="Enter last name">
+    </form>
+    </div>
+  </div>
+
+  <p class="custmr-info">
+    <form action="#">
+      <label for="address" class="form-label">Customer Address</label><br>
+      <input type="text" class="form-input form-input1" name="address" id="address" placeholder="Enter address">
+    </form>
+  </p>
+
+  <div class="custmr-info">
+    <div class="left-sec">
+    <form action="#">
+      <label for="country" class="form-label">Country</label>
+      <br>
+      <input type="text" class="form-input" name="country" id="country" placeholder="Enter country">
+    </form>
+    </div>
+    <div class="right-sec">
+      <form action="#">
+        <label for="State" class="form-label">State</label>
+        <br>
+        <input type="text" class="form-input" name="State" id="State" placeholder="Enter state">
+      </form>
+      </div>
+    </div>
     
+    <div class="custmr-info">
+      <div class="left-sec">
+      <form action="#">
+        <label for="city" class="form-label">City</label>
+        <br>
+        <input type="text" class="form-input" name="city" id="city" placeholder="Enter city">
+      </form>
+      </div>
+      <div class="right-sec">
+        <form action="#">
+          <label for="Zipcode" class="form-label">ZIP Code</label>
+          <br>
+          <input type="number" class="form-input" name="zipcode" id="zipcode" placeholder="Enter ZIP code">
+        </form>
+        </div>
+      </div>
+
+      <p class="custmr-info">
+        <form action="#">
+          <label for="phonenumber" class="form-label">Phone Number (optional)</label><br>
+          <input type="number" class="form-input form-input1" name="phonenumber" id="phonenumber" placeholder="Enter phone number">
+        </form>
+      </p>
+      <div id="next-button" onclick="next()">
+ <p class="next-btn">
+Next
+</p></div>
+      
+</div>
+    </div>
+
+    <div id="customerinfo-two">
+      <p class="create-ticket">Create Ticket</p>
+      <a href="#"><p id="closeinfo2" onclick="closeinfo2()">
+        <i class="fa-solid fa-xmark"></i>
+      </p></a>
+      <div class="ct-header">
+        <div class="ct-list">
+          <p class="ct-title">1</p>
+          <p class="ct-subt">Customer info</p>
+        </div>
+        <div class="ct-list">
+          <p class="ct-title">2</p>
+          <p class="ct-subt">Repair Ticket</p>
+        </div>
+        <div class="ct-list">
+          <p class="ct-title">3</p>
+          <p class="ct-subt">Ticket issued</p>
+        </div>
+      </div>
+      <p class="custmr-title">Customer Info</p>
+      <p class="custmr-subt">
+        Complete information related to the customer is required.
+      </p>
+
+      <div class="form-body">
+        <div class="custmr-info">
+          <div class="left-sec">
+            <form action="#">
+              <label for="email" class="form-label">Customer Email</label>
+              <br />
+              <input
+                type="text"
+                class="form-input"
+                name="email"
+                id="email"
+                placeholder="Enter email"
+              />
+            </form>
+          </div>
+          <div class="right-sec">
+            <form action="#">
+              <label for="number" class="form-label">Order Number</label>
+              <br />
+              <input
+                type="text"
+                class="form-input"
+                name="number"
+                id="number"
+                placeholder="Enter order number"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+      
+      <div class="next-button">
+        <a href="#"><p class="next-btn">
+       Next
+       </p></a></div>
+
+    </div>
+</div>
+</div>
+<script>
+
+
+  //  customerinfo-modal1  //
+
+   function openmodal(){
+var modal=document.getElementById("customerinfo-one");
+var blur=document.getElementById("blur");
+modal.style.display="block"
+blur.style.display="block"
+   }
+
+   function closemodal(){
+    var modal=document.getElementById("customerinfo-one");
+    var close=document.getElementById("close");
+    var blur=document.getElementById("blur");
+    blur.style.display="none"
+    modal.style.display="none"
+   }
+
+// customerinfo-modal2  //
+
+function next(){
+  var customermodal1=document.getElementById("customerinfo-one");
+  var customermodal2=document.getElementById("customerinfo-two");
+  customermodal1.style.display="none";
+  customermodal2.style.display="block";
+}
+
+function closeinfo2(){
+  var customermodal2=document.getElementById("customerinfo-two");
+ var closeinfo=document.getElementById("closeinfo2");
+ var blurinfo=document.getElementById("blur2");
+  customermodal2.style.display="none";
+  blurinfo.style.display="none"
+}
+</script>
   </body>
 </html>

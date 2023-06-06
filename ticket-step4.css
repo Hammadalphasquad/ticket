@@ -80,9 +80,9 @@ a{
   justify-content: space-between;
   padding: 20px 10px;
   width: 100%;
-  /* border: 1px solid green; */
   border: 1px solid #E4E4E7;
   border-radius: 12px;
+  /* border: 1px solid green; */
 }
 .header-top-title{
 font-size: 24px;
@@ -109,8 +109,8 @@ table{
   width: 100%;
 }
 th{
-  text-align: left;
   margin: 30px 0;
+  text-align: left;
 }
 td{
   padding: 16px 0;
@@ -135,7 +135,7 @@ color: #18181B;
   border-radius: 31px;
   font-size: 12px;
   font-weight: 500;
- 
+
 }
   
   
@@ -146,7 +146,7 @@ color: #18181B;
   border-radius: 31px;
   font-size: 12px;
   font-weight: 500;
- 
+
 }
 .yellow{
   color: #18181B;
@@ -155,7 +155,7 @@ color: #18181B;
    border-radius: 31px;
    font-size: 12px;
    font-weight: 500;
-  
+ 
 }
 .green{
   color: #18181B;
@@ -164,7 +164,7 @@ color: #18181B;
    border-radius: 31px;
    font-size: 12px;
    font-weight: 500;
-  
+ 
 }
 .lightgreen{
   color: #18181B;
@@ -231,15 +231,16 @@ color: #18181B;
 .hidden-b{
   display: none;
 }
-#blur {
+#blur{
   display: none;
   position: fixed;
-max-width: 100%;
+  max-width: 100%;
   /* max-height: 100%; */
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(3px);
-inset: 0;}
+ inset: 0;}
+ 
 #mymodal {
   display: none;
   height: auto;
@@ -267,7 +268,7 @@ inset: 0;}
   margin: 10px 0;
 }
 #close{
-  color:black;
+  color: black;
 }
 .details-flex{
   display: flex;
@@ -314,11 +315,11 @@ border-radius: 6px;
   margin: 5px 0;
 }
 .diagnosis{
- margin-top: 10px;
+ margin-top: 20px;
  border: 1px solid #E4E4E7;
  border-radius: 6px;
  padding: 12px 180px;
- 
+ margin-left: 15px;
 }
 .add-diagnosis-main{
   display: flex;
@@ -333,79 +334,24 @@ border-radius: 6px;
   border: 1px solid #18181B;
   border-radius: 6px;
   padding: 8px 12px;
-  color: #18181B
-  ;
-}
-.diagnosis-3-main{
-  border: 1px solid #E4E4E7;
- border-radius: 6px;
- margin-top:10px;
- padding-bottom: 10px;
-}
-.diagnosis-3{
-  border: 1px solid #E4E4E7;
- margin-top: 10px;
- margin-left: 10px;
- border-radius: 6px;
- padding: 12px 180px;
-}
-.diagnosis-img-main{
-  display: flex;
-  justify-content: flex-start; 
-  margin:20px;
-}
-.diagnosis-img{
-  background-color: #E4E4E7;
-  padding: 20px 30px;
-  border: 1px solid #F4F4F5;
-  border-radius: 6px;
-  color:#18181B;
-}
-.diagnosis-label-desc{
-  padding: 12px;
-  border: 1px solid #E4E4E7;
-  border-radius: 6px;
+  color: #18181B;}
+.diagnosis-status{
+  padding: 20px;
   background-color: #FAFAFA;
-  margin: 10px 0;
-}
-
-.diagnosis-text{
-  color: #18181B;
-  font-size: 12px;
-  font-weight: 600;
-}
-.diag-label{
-  font-size: 12px;
-}
-.media-main{
-  border: 2px dotted #E4E4E7;
+  border: 1px solid #E4E4E7;
   border-radius: 6px;
-  padding: 10px;
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 10px;
+  margin: 20px 0;
 }
-.upload-media{
-  color: #18181B;
-  padding: 5px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border: 2px solid #E4E4E7;
-  border-radius: 6px;
-  gap: 5px;
+.diag-stat{
+  font-size: 14px;
+  font-weight: 400;
+  margin: 5px 0;
 }
-.media-text{
+.clr-gray{
   font-size: 12px;
-  font-weight: 500;
-}
-.custmr-damage{
-  font-size: 12px;
-  font-weight: 600;
-  color: #18181B;
-}
-.radio-btn{
-  margin: 10px;
+  font-weight: 400;
+  color: #52525B
+  ;
 }
 .update-tckt-main{
   display: flex;

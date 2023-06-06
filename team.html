@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./team.css" />
+    <link rel="stylesheet" href="team.css" />
   </head>
   <body>
 
@@ -31,18 +31,18 @@
         </div>
         <div class="sidebar-flex">
           <div class="sidebar-lists">
-            <a href="createticket.html"><p class="sidebar-list">
+            <a href="analytics.html"><p class="sidebar-list">
               <i class="fa-solid fa-chart-simple"></i> Analytics
             </p></a>
-            <a href="./ticket-step3.html"><p class="sidebar-list">
+            <a href="./tickets.html"><p class="sidebar-list">
               <i class="fa-solid fa-ticket"></i> Tickets</p></a>
-            <a href="#"><p class="sidebar-list">
+            <a href="customers.html"><p class="sidebar-list">
              <i class="fa-solid fa-restroom"></i> Customers
             </p></a>
-            <a href="#"><p class="sidebar-list">
+            <a href="hardware.html"><p class="sidebar-list">
              <i class="fa-solid fa-microchip"></i> Hardware
             </p></a>
-            <a href="./team3.html"><p class="sidebar-list highlite">
+            <a href="team.html"><p class="sidebar-list highlite">
              <i class="fa-solid fa-people-group"></i> Team
             </p></a>
             <a href="#"><p class="sidebar-list"><i class="fa-solid fa-gears"></i> Settings</p></a>
@@ -63,22 +63,29 @@
       <!-- main-right -->
 
       <div class="main-right">
-        <div
-        class="header-top">
+        <div class="header-top">
           <h3 class="header-top-title">Team</h3>
-          <a href="#">
-            <div id="mybtn">
+
             <p class="header-top-subt">
               <i class="fa-solid fa-circle-plus" class="create-icon"></i> CREATE
               TICKET
             </p></a
-          ></div>
+          >
+        
         </div>
         <div class="add-search">
-            <a href="#"><p class="add-text">
+          <div class="add-mem">
+           <p id="addmember-btn" onclick="openAddMemberModal()">
 Add member
-            </p></a>
-            <input class="addmem" type="search" placeholder="search members">
+            </p>
+            <p id="mybtn" onclick="openDelModal()">
+                Confirm Delete
+                            </p>
+<p class="cancel">
+Cancel
+</p>
+        </div>
+            <input type="search" placeholder="search members">
         </div>
         <div class="ticket-table">
           <table>
@@ -100,7 +107,7 @@ Add member
               <td><span class="purple">Technician</span></td>
               <td>Oct 12, 2022</td>
               <td>
-                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
+                <p class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <p class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
               </td>
             </tr>
 
@@ -111,7 +118,7 @@ Add member
               <td><span class="blue">Admin</span></td>
               <td>Oct 12, 2022</td>
               <td>
-                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
+                <p class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <p class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
               </td>
             </tr>
 
@@ -122,7 +129,7 @@ Add member
               <td><span class="blue">Technician</span></td>
               <td>Oct 12, 2022</td>
               <td>
-                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
+                <p class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <p class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
               </td>
             </tr>
 
@@ -133,7 +140,7 @@ Add member
               <td><span class="blue">Admin</span></td>
               <td>Oct 12, 2022</td>
               <td>
-                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
+                <p class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <p class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
               </td>
             </tr>
 
@@ -144,7 +151,7 @@ Add member
               <td><span class="blue">Admin</span></td>
               <td>Oct 12, 2022</td>
               <td>
-                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
+                <p class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <p class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
               </td>
             </tr>
 
@@ -155,7 +162,7 @@ Add member
               <td><span class="blue">Admin</span></td>
               <td>Oct 12, 2022</td>
               <td>
-                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
+                <p class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <p class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
               </td>
             </tr>
 
@@ -166,7 +173,7 @@ Add member
               <td><span class="blue">Admin</span></td>
               <td>Oct 12, 2022</td>
               <td>
-                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
+                <p class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <p class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
               </td>
             </tr>
 
@@ -177,7 +184,7 @@ Add member
               <td><span class="blue">Admin</span></td>
               <td>Oct 12, 2022</td>
               <td>
-                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
+                <p class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <p class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
               </td>
             </tr>
 
@@ -188,7 +195,7 @@ Add member
               <td><span class="purple">Technician</span></td>
               <td>Oct 12, 2022</td>
               <td>
-                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
+                <p class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <p class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
               </td>
             </tr>
 
@@ -199,13 +206,125 @@ Add member
               <td><span class="purple">Technician</span></td>
               <td>Oct 12, 2022</td>
               <td>
-                <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
+                <p class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <p class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
               </td>
             </tr>
           </table>
         </div>
+
+        <!-- blur -->
+<div id="blur" onclick="closeDelModal()">
+</div>
+<div id="addblur" onclick="closeAddMemberModal()">
+</div>
+
+<!-- addmember-section -->
+
+<div id="addmembermodal">
+  <p class="form-title">
+  Add Member
+  </p>
+  
+  <div class="member-data">
+  <label for="firstname">First name</label><br>
+  <input type="text" name="firstname" id="firstname" placeholder="John">
+  </div>
+  
+  <div class="member-data">
+  <label for="lastname">Last name</label><br>
+  <input type="text" name="lastname" id="lastname" placeholder="Doe">
+  </div>
+  
+  <div class="member-data">
+  <label for="email">Email</label><br>
+  <input type="text" name="email" id="email" placeholder="johndoe@gmail.com">
+  </div>
+  
+  <div class="member-data">
+      <label for="role">Role</label><br>
+      <input type="text" name="role" id="role" placeholder="johndoe@gmail.com">
       </div>
+  
+      <div class="member-data">
+          <label for="date">Date created</label><br>
+          <input type="date" name="date" id="date">
+          </div>
+  
+          <p class="form-member">
+  Add Member
+          </p>
+          <p class="form-cancel" onclick="closeAddMemberModal()">
+              Cancel
+          </p>
+  <span id="addmember-close" onclick="closeAddMemberModal()">
+      <i class="fa-solid fa-xmark"></i>
+  </span>
+</div>
+
+<!-- delete-section -->
+
+<div id="delModal">
+<span class="del-icon">
+    <i class="fa-regular fa-trash-can"></i>
+</span>
+<p class="del-title">
+    Deleteing team member(s)? 
+</p>
+<p class="del-subt">
+    You are about to delete member(s) from the team. This action is irreversible and can’t be undone. Do you wish to proceed?
+</p>
+<div class="buttons">
+<p id="cancel-btn" onclick="closeDelModal()">Cancel</p>
+<p id="confirm-btn" onclick="closeDelModal()">Confirm delete</p>
+</div>
+<div id="close" onclick="closeDelModal()">
+   <i class="fa-solid fa-xmark"></i>
+</div>
+</div>
     </div>
 
+    <!-- java script -->
+
+    <script>
+
+      // delmodal//
+
+           function openDelModal(){
+            var modal=document.getElementById("delModal");
+            var btn=document.getElementById("mybtn");
+            var delblur=document.getElementById("blur");
+            modal.style.display="block"
+            delblur.style.display="block"
+           }
+           function closeDelModal(){
+           var modal=document.getElementById("delModal");
+           var close=document.getElementById("confirm-btn")
+           var close=document.getElementById("close")
+           var delblur=document.getElementById("blur")
+           modal.style.display="none"
+           delblur.style.display="none"
+           }
+
+        //  addmembermodal//
+
+            function openAddMemberModal(){
+            var addmodal=document.getElementById("addmembermodal");
+            var button=document.getElementById("addmember-btn");
+            var addblur=document.getElementById("addblur");
+            addmodal.style.display="block"
+            addblur.style.display="block"
+           }
+
+           function closeAddMemberModal(){
+            var addmodal=document.getElementById("addmembermodal");
+            var close=document.getElementById("addmember-close");
+            var addblur=document.getElementById("addblur")
+            addmodal.style.display="none"
+            addblur.style.display="none"
+           }
+
+
+    </script>
+  
   </body>
 </html>

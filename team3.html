@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./team3.css" />
+    <link rel="stylesheet" href="./team4.css" />
   </head>
   <body>
 
@@ -31,10 +31,10 @@
         </div>
         <div class="sidebar-flex">
           <div class="sidebar-lists">
-            <a href="createticket.html"><p class="sidebar-list">
+            <a href="analytics.html"><p class="sidebar-list">
               <i class="fa-solid fa-chart-simple"></i> Analytics
             </p></a>
-            <a href="./tickets.html"><p class="sidebar-list">
+            <a href="tickets.html"><p class="sidebar-list">
               <i class="fa-solid fa-ticket"></i> Tickets</p></a>
             <a href="#"><p class="sidebar-list">
              <i class="fa-solid fa-restroom"></i> Customers
@@ -42,7 +42,7 @@
             <a href="#"><p class="sidebar-list">
              <i class="fa-solid fa-microchip"></i> Hardware
             </p></a>
-            <a href="./team.html"><p class="sidebar-list highlite">
+            <a href="team.html"><p class="sidebar-list highlite">
              <i class="fa-solid fa-people-group"></i> Team
             </p></a>
             <a href="#"><p class="sidebar-list"><i class="fa-solid fa-gears"></i> Settings</p></a>
@@ -63,30 +63,22 @@
       <!-- main-right -->
 
       <div class="main-right">
-        <div class="header-top">
+        <div
+        class="header-top">
           <h3 class="header-top-title">Team</h3>
           <a href="#">
-            
+            <div id="">
             <p class="header-top-subt">
               <i class="fa-solid fa-circle-plus" class="create-icon"></i> CREATE
               TICKET
             </p></a
-          >
-        
+          ></div>
         </div>
         <div class="add-search">
-          <div class="add-mem">
-            <a href="./team4.html"><p class="add-text">
+            <a href="#"><p id="mybtn" onclick="openmodal()">
 Add member
             </p></a>
-            <a href="#"><p id="mybtn" onclick="openmodal()">
-                Confirm Delete
-                            </p></a>
-<a href="#"><p class="cancel">
-Cancel
-</p></a>
-        </div>
-            <input type="search" placeholder="search members">
+            <input class="addmem" type="search" placeholder="search members">
         </div>
         <div class="ticket-table">
           <table>
@@ -138,7 +130,7 @@ Cancel
               <td>Cameron</td>
               <td>Richards</td>
               <td>sara.cruz@example.com</td>
-              <td><span class="blue">Admin</span></td>
+              <td><span class="blue">Technician</span></td>
               <td>Oct 12, 2022</td>
               <td>
                 <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
@@ -149,7 +141,7 @@ Cancel
               <td>Cody</td>
               <td>Warren</td>
               <td>debra.holt@example.com</td>
-              <td><span class="blue">Admin</span></td>
+              <td><span class="blue">Technician</span></td>
               <td>Oct 12, 2022</td>
               <td>
                 <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
@@ -160,7 +152,7 @@ Cancel
               <td>Philip</td>
               <td>Lane</td>
               <td>nevaeh.simmons@example.com</td>
-              <td><span class="blue">Admin</span></td>
+              <td><span class="blue">Technician</span></td>
               <td>Oct 12, 2022</td>
               <td>
                 <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
@@ -171,7 +163,7 @@ Cancel
               <td>Arthur</td>
               <td>Edwards</td>
               <td>debbie.baker@example.com</td>
-              <td><span class="blue">Admin</span></td>
+              <td><span class="blue">Technician</span></td>
               <td>Oct 12, 2022</td>
               <td>
                 <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
@@ -182,7 +174,7 @@ Cancel
               <td>Max</td>
               <td>Fox</td>
               <td>tanya.hill@example.com</td>
-              <td><span class="blue">Admin</span></td>
+              <td><span class="blue">Technician</span></td>
               <td>Oct 12, 2022</td>
               <td>
                 <a href="" class="action-btn"><i class="fa-regular fa-pen-to-square"></i></a> <a href="" class="action-btn"><i class="fa-regular fa-trash-can"></i></a>
@@ -212,51 +204,70 @@ Cancel
             </tr>
           </table>
         </div>
+      </div>
 
-        <!-- blur -->
-<div id="blur" onclick="closemodal()">
+    <div id="blur" onclick="closemodal()">
+
+    </div>
+    <div id="mymodal">
+<p class="form-title">
+Add Member
+</p>
+
+<div class="member-data">
+<label for="firstname">First name</label><br>
+<input type="text" name="firstname" id="firstname" placeholder="John">
 </div>
 
-<!-- delete-section -->
-<div id="mymodal">
-<span class="del-icon">
-    <i class="fa-regular fa-trash-can"></i>
-</span>
-<p class="del-title">
-    Deleteing team member(s)? 
-</p>
-<p class="del-subt">
-    You are about to delete member(s) from the team. This action is irreversible and can’t be undone. Do you wish to proceed?
-</p>
-<div class="buttons">
-<a href="#"><p id="cancel-btn" onclick="closemodal()">Cancel</p></a>
-<a href="#"><p id="confirm-btn" onclick="closemodal()">Confirm delete</p></a>
+<div class="member-data">
+<label for="lastname">Last name</label><br>
+<input type="text" name="lastname" id="lastname" placeholder="Doe">
 </div>
-<a href="#"><div id="close" onclick="closemodal()">
-   <i class="fa-solid fa-xmark"></i>
-</div></a>
+
+<div class="member-data">
+<label for="email">Email</label><br>
+<input type="text" name="email" id="email" placeholder="johndoe@gmail.com">
 </div>
+
+<div class="member-data">
+    <label for="role">Role</label><br>
+    <input type="text" name="role" id="role" placeholder="johndoe@gmail.com">
     </div>
 
-    <!-- java script -->
+    <div class="member-data">
+        <label for="date">Date created</label><br>
+        <input type="date" name="date" id="date">
+        </div>
 
+        <a href="#"><p class="form-member">
+Add Member
+        </p></a>
+        <a href="#"><p class="form-cancel">
+            Cancel
+        </p></a>
+<a href="#"><span id="close" onclick="closemodal()">
+    <i class="fa-solid fa-xmark"></i>
+</span></a>
+    </div>
+    </div>
+
+    <!-- java-script -->
     <script>
-           function openmodal(){
-            var modal=document.getElementById("mymodal");
-            var btn=document.getElementById("mybtn");
-            var blur=document.getElementById("blur");
-            modal.style.display="block"
-            blur.style.display="block"
-           }
-           function closemodal(){
-           var modal=document.getElementById("mymodal");
-           var close=document.getElementById("confirm-btn")
-           var close=document.getElementById("close")
-           var blur=document.getElementById("blur")
-           modal.style.display="none"
-           blur.style.display="none"
-           }
+      function openmodal(){
+        var modal=document.getElementById("mymodal");
+        var btn=document.getElementById("mybtn");
+        var blur=document.getElementById("blur");
+        modal.style.display="block"
+        blur.style.display="block"
+      }
+      function closemodal(){
+        var modal=document.getElementById("mymodal");
+        var btn=document.getElementById("mybtn");
+        var blur=document.getElementById("blur")
+        var close=document.getElementById("close");
+        modal.style.display="none"
+        blur.style.display="none"
+      }
     </script>
-  
   </body>
 </html>
